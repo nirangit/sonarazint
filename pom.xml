@@ -22,15 +22,12 @@
     <version>3.2</version>
     </dependency>
     </dependencies>
+    <properties>
+  <sonar.organization>niranjanisonar</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
 
-    <profiles>
-    <profile>
-    <id>sonar</id>
-    <activation>
-    <activeByDefault>true</activeByDefault>
-    </activation>
-    </profile>
-    </profiles>
+   
 
   <build>
     <finalName>helloworld</finalName>
