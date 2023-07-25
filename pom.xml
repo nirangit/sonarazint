@@ -14,14 +14,7 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
-    </dependency>
-    <profiles>
-<profile>
-  <id>sonar</id>
-  <activation>
-  <activeByDefault>true</activeByDefault>
-  </activation>
- </profile>
+    </dependency>    
 
     <dependency>
     <groupId>org.sonarsource.scanner.maven</groupId>
@@ -29,6 +22,15 @@
     <version>3.2</version>
     </dependency>
     </dependencies>
+
+    <profiles>
+    <profile>
+    <id>sonar</id>
+    <activation>
+    <activeByDefault>true</activeByDefault>
+    </activation>
+    </profile>
+    </profiles>
 
   <build>
     <finalName>helloworld</finalName>
